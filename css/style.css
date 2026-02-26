@@ -3031,6 +3031,48 @@ body {
   }
 }
 
+/* Coach Photo Styles */
+.coach-photo {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #6a5cff;
+  box-shadow: 0 0 20px rgba(106, 92, 255, 0.3);
+  position: relative;
+}
+
+.coach-photo::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background: linear-gradient(45deg, #6a5cff, #00d4ff);
+  border-radius: 50%;
+  z-index: -1;
+  animation: rotate 3s linear infinite;
+}
+
+.coach-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.coach-card:hover .coach-avatar-img {
+  transform: scale(1.05);
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 .process-timeline,
 .flow-timeline {
   grid-template-columns: 1fr;
