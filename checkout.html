@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <ul>
+    <li><a href="index.html" class="tab-link" id="tab-landing">Home</a></li>
+    <li><a href="problem.html" class="tab-link" id="tab-problem">Start Protocol</a></li>
+    <li><a href="reveal.html" class="tab-link" id="tab-reveal">Reveal Kit</a></li>
+    <div class="tab-indicator"></div>
+  </ul>
+</nav>
+<header>
+  <h1>Your Personalized ASCEND Protocol</h1>
+</header>
+
+<main class="checkout-container">
+  <div class="recommendation-section">
+    <h2>Based on your problem, we recommend:</h2>
+    <div class="recommended-book" id="recommendedBook">
+      <!-- Book will be loaded here -->
+    </div>
+  </div>
+
+  <div class="user-problem-section">
+    <h3>Your Challenge:</h3>
+    <p class="problem-text" id="problemText">
+      <!-- Problem will be loaded here -->
+    </p>
+  </div>
+
+  <div class="checkout-details">
+    <div class="price-section">
+      <p class="price-label">Protocol Price:</p>
+      <p class="price-amount" id="protocolPrice">$49.99</p>
+    </div>
+    
+    <div class="user-info">
+      <p><strong>Name:</strong> <span id="userName"></span></p>
+      <p><strong>Email:</strong> <span id="userEmail"></span></p>
+    </div>
+
+    <button class="checkout-btn" onclick="completePurchase()">
+      Complete My Protocol
+    </button>
+  </div>
+</main>
+<canvas id="particles"></canvas>
+
+<script src="js/main.js"></script>
+</body>
+</html>

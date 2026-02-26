@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Start Your PsyNova</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar">
+  <ul>
+    <li><a href="index.html" class="tab-link" id="tab-landing">Home</a></li>
+    <li><a href="problem.html" class="tab-link active" id="tab-problem">Start Protocol</a></li>
+    <li><a href="reveal.html" class="tab-link" id="tab-reveal">Reveal Kit</a></li>
+    <div class="tab-indicator"></div>
+  </ul>
+</nav>
+
+<header class="problem-header">
+  <div class="header-content">
+    <h1 class="main-title">
+      <span class="title-gradient">Transform Your Reality</span>
+      <span class="title-subtitle">Begin Your PsyNova Journey</span>
+    </h1>
+    <div class="floating-orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+  </div>
+</header>
+
+<main class="problem-container">
+  <div class="problem-intro">
+    <div class="intro-card">
+      <div class="card-icon">🧠</div>
+      <h2>Unlock Your Potential</h2>
+      <p>Every great journey begins with understanding. Share your challenge, and let our AI-powered protocol guide you to transformation.</p>
+    </div>
+  </div>
+
+  <div class="problem-form-section">
+    <div class="form-container">
+      <div class="form-header">
+        <h3>Personalized Protocol Generator</h3>
+        <p>Tell us about your current challenge</p>
+      </div>
+      
+      <form id="problemForm" class="problem-form">
+        <div class="input-group">
+          <div class="input-wrapper">
+            <input type="text" id="name" placeholder=" " required>
+            <label for="name" class="floating-label">Your Name</label>
+            <div class="input-border"></div>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <div class="input-wrapper">
+            <input type="email" id="email" placeholder=" " required>
+            <label for="email" class="floating-label">Email Address</label>
+            <div class="input-border"></div>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <div class="input-wrapper textarea-wrapper">
+            <textarea id="problem" placeholder=" " required rows="4"></textarea>
+            <label for="problem" class="floating-label">Describe Your Challenge</label>
+            <div class="input-border"></div>
+            <div class="char-counter">
+              <span id="charCount">0</span>/500
+            </div>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="submit-btn">
+            <span class="btn-content">
+              <span class="btn-text">Generate My Protocol</span>
+              <span class="btn-icon">🚀</span>
+            </span>
+            <div class="btn-glow"></div>
+          </button>
+        </div>
+      </form>
+
+      <div id="result" class="result-section"></div>
+    </div>
+  </div>
+
+  <div class="features-showcase">
+    <div class="feature-card">
+      <div class="feature-icon">🎯</div>
+      <h4>AI-Powered Analysis</h4>
+      <p>Advanced algorithms analyze your unique situation</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📚</div>
+      <h4>Curated Resources</h4>
+      <p>Personalized book recommendations tailored to you</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">⚡</div>
+      <h4>Instant Results</h4>
+      <p>Get your personalized protocol immediately</p>
+    </div>
+  </div>
+</main>
+
+<canvas id="particles"></canvas>
+
+<script src="js/main.js"></script>
+<script src="js/problem.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bibliothèque - ASCEND Protocol</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="particles"></canvas>
+<nav class="navbar">
+  <ul>
+    <li><a href="index.html" class="tab-link" id="tab-landing">Home</a></li>
+    <li><a href="problem.html" class="tab-link" id="tab-problem">Start Protocol</a></li>
+    <li><a href="reveal.html" class="tab-link" id="tab-reveal">Reveal Kit</a></li>
+    <div class="tab-indicator"></div>
+  </ul>
+</nav>
+<header>
+  <h1>ASCEND Bibliothèque</h1>
+  <p>Discover your next transformation journey</p>
+</header>
+
+<main class="bibliotheque-container">
+  <div class="search-section">
+    <input type="text" id="searchInput" placeholder="Search books by title, author, or category...">
+    <button id="searchBtn">Search</button>
+  </div>
+
+  <div class="filter-section">
+    <button class="filter-btn active" data-category="all">All Books</button>
+    <button class="filter-btn" data-category="productivity">Productivity</button>
+    <button class="filter-btn" data-category="mindset">Mindset</button>
+    <button class="filter-btn" data-category="learning">Learning</button>
+    <button class="filter-btn" data-category="business">Business</button>
+  </div>
+
+  <div class="books-grid" id="booksGrid">
+    <!-- Books will be dynamically loaded here -->
+  </div>
+</main>
+
+<script src="js/main.js"></script>
+<script src="js/bibliotheque.js"></script>
+</body>
+</html>
